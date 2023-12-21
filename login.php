@@ -33,7 +33,7 @@
     <div class="error-pagewrap">
         <div class="error-page-int">
              <div class="text-center custom-login">
-            <img  src="gambar/depan/logo.png"  style="width: 200px;">
+            <img  src="gambar/sistem/logo.png"  style="width: 200px;">
 
             </div>
 
@@ -77,12 +77,12 @@
                             </div>
                         </form>
                         <center>
-                            <a href="buat_akun.php" class="text-center btn-link" >Buat Akun</a>
+                            <a href="buat_akun.php" class="btn text-center btn-link" >Buat Akun</a>
                         </center>
                     </div>                        
             <br>
             <div class="text-center login-footer">
-                <p class="text-muted">Copyright © <?php echo date('Y') ?>. PT. Mitra Karawangjaya</p>
+                <p class="text-muted">Copyright © <?php echo date('Y') ?>. PT. Mitra Karawang Jaya</p>
             </div>
             </div>
         </div>   

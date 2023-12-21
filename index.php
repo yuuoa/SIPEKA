@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv='refresh' content='0; URL=./login.php'>
     <title>Login User | Sistem Informasi Arsip Digital</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +58,7 @@
 
             <center>
            <div class="text-center m-b-md custom-login" style="width: 40%;">
-            <img class="main-logo"src="assets/img/logo/logokim.png" style="padding-top: 30px;" alt=""></a>
+            <img class="main-logo"src="assets/img/logo/logo.png" style="padding-top: 30px;" alt=""></a>
             </div>            
 			</center>
 </div>
