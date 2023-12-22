@@ -1056,7 +1056,7 @@ ul.breadcome-menu li a:hover{
     margin-bottom:0px;
 }
 .skill .progress-bar > span {
-    background: #333 none repeat scroll 0 0;
+    background: #43A047 none repeat scroll 0 0;
     float: right;
     font-size: 11px;
     margin-right: 10px;
@@ -1076,7 +1076,7 @@ ul.breadcome-menu li a:hover{
     width: 0;
 }
 .skill .progress-bar > span:before {
-    border-top-color: #333;
+    border-top-color: #43A047;
     border-width: 5px;
     left: 50%;
     margin-left: -5px;
@@ -1477,7 +1477,7 @@ ul#single-product-tab li{
 }
 .single-product-details h1, .single-pro-size h6, .color-quality-details h5, .color-quality h4, .single-social-area h3, .sb-shop-product-single h2{
 	font-weight:700;
-	color:#333;
+	color:#43A047;
 	text-transform:uppercase;
 }
 .single-pro-star, .list-star{
@@ -1491,7 +1491,7 @@ ul#single-product-tab li{
 	margin:10px 0px;
 }
 .single-regular, .list-regular{
-	color:#333333;
+	color:#43A047333;
 	font-weight:700;
 	font-size:24px;
 }
@@ -1503,7 +1503,7 @@ ul#single-product-tab li{
 }
 .single-pro-cn h3{
 	font-size:14px;
-	color:#333;
+	color:#43A047;
 	font-weight:400;
 	text-transform:uppercase;
 }
@@ -1520,7 +1520,7 @@ ul#single-product-tab li{
 	margin:10px 0px;
 }
 .single-pro-size span{
-	    color: #333;
+	    color: #43A047;
     font-size: 12px;
     background: #fff;
     border: 1px solid rgba(0,0,0,.12);
@@ -1570,7 +1570,7 @@ ul#single-product-tab li{
   text-align: center;
   width: 25px;
   cursor:pointer;
-  color:#333;
+  color:#43A047;
   text-decoration:none;
 }
 .pro-quantity-changer [type="text"] {
@@ -1578,7 +1578,7 @@ ul#single-product-tab li{
   height: 25px;
   text-align: center;
   width: 50px;
-  color:#333;
+  color:#43A047;
   font-weight:400;
   font-size:12px;
 }
@@ -3651,7 +3651,7 @@ div#sparklinehome canvas {
     width: 100% !important;
 }
 .header-top-area {
-    background: #a2a2a2;
+    background: #43A047;
 }
 .sidebar-nav .metismenu{
 	background: #fff;
@@ -3724,7 +3724,7 @@ div#sparklinehome canvas {
     background-color:   ;
 }
 .footer-copyright-area {
-    background: #a2a2a2;
+    background: #43A047;
 	padding: 20px 0px;
     text-align: center;
 }

@@ -44,8 +44,8 @@
 <body>
     <div class="left-sidebar-pro">
         <nav id="sidebar" class=""><div class="sidebar-header ">
-                <a><img class="main-logo " style="margin-top: 20px" src="../assets/img/logo/log.png" alt="" /></a>
-                <strong><a><img src="../assets/img/logo/lol.png" alt="" /></a></strong>
+                <a><img class="main-logo " style="margin-top: 20px" src="../gambar/sistem/logo.png" alt="" width = "150px" /></a>
+                <strong><a><img src="../gambar/sistem/logo-icon.png" alt="" width="40px"/></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar hidden-print">
 
@@ -116,11 +116,8 @@
                                     </div>
 
                                     <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12">
-                                       
-
-                                         <div class="col-lg-12 col-md-12" style="padding-top: 18px">
-                                                <img src="../gambar/sistem/sipeka2.png" >
-                                           
+                                         <div class="col-lg-12 col-md-12">
+                                                <!-- <img src="../gambar/sistem/logo.png" width="100px"> -->
                                         </div>
                                 
                                 </div>

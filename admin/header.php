@@ -45,8 +45,8 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header ">
-                <a href="index.html"><img class="main-logo" style="margin-top: 20px" src="../assets/img/logo/log.png" alt="" /></a>
-                <strong><a href="index.html"><img src="../assets/img/logo/lol.png" alt="" /></a></strong>
+                <a href="index.html"><img class="main-logo" style="margin-top: 20px" src="../gambar/sistem/logo.png" width="150px" alt="" /></a>
+                <strong><a href="index.html"><img src="../gambar/sistem/logo-icon.png" width="40px" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
 
