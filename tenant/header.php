@@ -54,13 +54,13 @@
                     <ul class="metismenu" id="menu1">
                         <li class="active">
                             <a href="index.php">
-                                <span class="educate-icon educate-home icon-wrap"></span>
+                                <span class="fa fa-home icon-wrap"></span>
                                 <span class="mini-click-non">Dashboard</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="arsip.php" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Arsip Saya</span></a>
+                            <a href="arsip.php" aria-expanded="false"><span class="fa fa-file-text icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Arsip Saya</span></a>
                         </li>
 
                        
@@ -74,15 +74,15 @@
                         </li>
 						-->
 						 <li>
-                            <a href="panduan.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Panduan</span></a>
+                            <a href="panduan.php" aria-expanded="false"><span class="fa fa-book icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Panduan</span></a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="gantipassword.php" aria-expanded="false"><span class="educate-icon educate-danger icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Ganti Password</span></a>
-                        </li>
+                        </li> -->
 
-                        <li>
+                        <!-- <li>
                             <a href="logout.php" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Logout</span></a>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </nav>
@@ -125,7 +125,7 @@
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
 
-                                                <li class="nav-item">
+                                                <!-- <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="educate-icon educate-bell" aria-hidden="true"></i><span class="indicator-nt"></span></a>
                                                     <div role="menu" class="notification-author dropdown-menu animated zoomIn">
                                                         <div class="notification-single-top">
@@ -157,7 +157,7 @@
                                                         <a href="#">View All Notification</a>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </li> -->
 
                                             <li class="nav-item">
                                                 <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
@@ -199,33 +199,39 @@
                             <ul class="mobile-menu-nav">
                                 <li class="active">
                                     <a href="index.php">
-                                        <span class="educate-icon educate-home icon-wrap"></span>
+                                        <span class="fa fa-home icon-wrap"></span>
                                         <span class="mini-click-non">Dashboard</span>
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="arsip.php" aria-expanded="false"><span class="fa fa-file-text icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Arsip Saya</span></a>
+                                </li>
+                                <li>
+                                    <a href="panduan.php" aria-expanded="false"><span class="fa fa-book icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Panduan</span></a>
+                                </li>
+                                <!-- <li>
                                     <a href="kategori.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Kategori</span></a>
-                                </li>
+                                </li> -->
 
-                                <li>
+                                <!-- <li>
                                     <a href="tenant.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">tenant</span></a>
-                                </li>
+                                </li> -->
 
-                                <li>
+                                <!-- <li>
                                     <a href="user.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">User</span></a>
-                                </li>
-
+                                </li> -->
+<!-- 
                                 <li>
                                     <a href="riwayat.php" aria-expanded="false"><span class="educate-icon educate-form icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">User</span></a>
-                                </li>
+                                </li> -->
 
-                                <li>
+                                <!-- <li>
                                     <a href="gantipassword.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Ganti Password</span></a>
-                                </li>
-
+                                </li> -->
+<!-- 
                                 <li>
                                     <a href="logout.php" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Logout</span></a>
-                                </li>
+                                </li> -->
                             </ul>
                         </nav>
                     </div>
