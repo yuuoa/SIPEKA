@@ -80,6 +80,14 @@
                                     <td><?php echo $p['tenant_username']; ?></td>
                                 </tr>
                                 <tr>
+                                    <th>E-Mail Tenant</th>
+                                    <td><?php echo $p['tenant_email']; ?></td>
+                                </tr>
+                                <tr>
+                                    <th>Nomor Kontak Tenant</th>
+                                    <td><?php echo $p['tenant_notelp']; ?></td>
+                                </tr>
+                                <tr>
                                     <th>Status Akun</th>
                                     <td>
                                         <?php if ($p['tenant_status'] == 0) : ?>
