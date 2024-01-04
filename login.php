@@ -62,8 +62,8 @@
                     <div class="panel-body">
                         <form action="periksa_login.php" method="POST" id="loginForm">
                             <div class="form-group">
-                                <label class="control-label" for="username">Username</label>
-                                <input type="text" placeholder="username" title="Please enter you username" required="required" autocomplete="off" name="username" id="username" class="form-control">
+                                <label class="control-label" for="username">Username / Email</label>
+                                <input type="text" placeholder="username / email" title="Please enter you username or email" required="required" autocomplete="off" name="username" id="username" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label class="control-label" for="password">Password</label>

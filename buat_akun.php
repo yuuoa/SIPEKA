@@ -42,7 +42,7 @@
                 <div class="hpanel">
                     <div class="panel-body">
                     <div class="">
-                                <button target="./login.php" class="btn-link"><i class="fa fa-arrow-left"></i> Kembali</button>
+                                <a href="login.php" class="btn-sm btn-primary"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Kembali</a>
                             </div>      
                         <form method="post" action="buat_akun_aksi.php" enctype="multipart/form-data">
                             <div class="form-group">                            
@@ -78,8 +78,8 @@
                             </div>
                             <div class="form-group">
                                 <label>Dokumen Surat Kuasa</label>
-                                <input type="file" name="suratkuasa" accept=".pdf,.jpeg,.png" required>
-                                <p style="color:red;"><em>.pfd, .jpeg, .png. Max. 2MB</em></p>
+                                <input type="file" name="suratkuasa" accept=".pdf" required>
+                                <p style="color:red;"><em>.PDF Max. 2MB</em></p>
                             </div>
                             <div class="form-group">
                                 <input type="submit" class="btn btn-success btn-block loginbtn" value="Simpan">

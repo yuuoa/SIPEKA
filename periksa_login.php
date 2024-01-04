@@ -51,7 +51,7 @@ elseif($username == "fatur" || $username == "devita"){
 else
 {
 
-		$login = mysqli_query($koneksi, "SELECT * FROM tenant WHERE tenant_username='$username' AND tenant_password='$password' OR tenant_password='$password2'");
+		$login = mysqli_query($koneksi, "SELECT * FROM tenant WHERE tenant_username='$username' OR tenant_email='$username' AND tenant_password='$password' OR tenant_password='$password2'");
 		$cek = mysqli_num_rows($login);
 		if($cek > 0)
 		{
