@@ -65,6 +65,7 @@
                                             <div class="form-group">
                                             <label></label>
                                             <input type="submit" class="btn btn-primary" value="Aktivasi">
+                                            <a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
                                         </div>
                                     </form>
                                 </div>
