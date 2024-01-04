@@ -45,8 +45,10 @@
                     <tr>
                         <th width="1%">No</th>
                         <th width="5%">Foto</th>
-                        <th>Nama Perusahaan / Tenant</th>
-                        <th>Username</th>
+                        <th class="text-center">Nama Perusahaan / Tenant</th>
+                        <th class="text-center">Kode Tenant</th>
+                        <th class="text-center">Username</th>
+                        <th class="text-center">Status Akun</th>
                         <th class="text-center" width="10%">OPSI</th>
                     </tr>
                 </thead>
@@ -57,7 +59,7 @@
                     $tenant = mysqli_query($koneksi,"SELECT * FROM tenant ORDER BY tenant_id DESC");
                     while($p = mysqli_fetch_array($tenant)){
                         ?>
-                        <tr>
+                        <tr class="text-center">
                             <td><?php echo $no++; ?></td>
                             <td>
                                 <?php 
@@ -73,11 +75,23 @@
                                 ?>
                             </td>
                             <td><?php echo $p['tenant_nama'] ?></td>
+                            <td><?php echo $p['tenant_kode'] ?></td>
                             <td><?php echo $p['tenant_username'] ?></td>
+                            <td>
+                                <?php                                     
+                                $status = $p['tenant_status'];
+                            ?>
+                                <?php if ($status == 0) : ?>
+                                    <p class = "text-center "><strong class = "text-danger">Belum Aktif</strong></p>
+                                <?php elseif ($status == 1) : ?>
+                                    <p class = "text-center "><strong class = "text-primary">Aktif</strong></p>
+                                <?php endif ?>
+                            </td>
                             <td class="text-center">
                                 <div class="btn-group">
-                                    <a href="tenant_edit.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-default"><i class="fa fa-wrench"></i></a>
-                                    <a href="tenant_hapus.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-default"><i class="fa fa-trash"></i></a>
+                                    <a href="tenant_preview.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-default"><i class="fa fa-search"></i>&nbsp;Lihat Detil Tenant</a>
+                                    <a href="tenant_edit.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-default"><i class="fa fa-wrench"></i>&nbsp;Edit Tenant</a>
+                                    <a href="tenant_hapus.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-default"><i class="fa fa-trash"></i>&nbsp;Hapus Tenant</a>
                                 </div>
                             </td>
                         </tr>

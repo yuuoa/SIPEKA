@@ -64,7 +64,7 @@ else
 			if ($data['tenant_status'] == 1)
 			{
 				if($data['tenant_password'] == $password2)
-					header("location:tenant/gantipassword.php");
+					header("location:tenant/gantipassword_awal.php");
 				else
 					header("location:tenant/");
 			}

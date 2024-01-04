@@ -62,21 +62,9 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Jabatan</label>
-                                <input type="text" class="form-control" name="jabatan" value="<?php echo $d['tenant_jabatan']; ?>">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label>Nomor Telepon (WhatsApp)</label>
-                                <input type="text" class="form-control" name="teleponwa"value="<?php echo $d['tenant_notelp']; ?>">
-                            </div>
-                            <div class="form-group">
-                                <label>Nomor Telepon Kantor</label>
-                                <input type="text" class="form-control" name="teleponkantor" value="<?php echo $d['tenant_nokantor']; ?>">
-                            </div>
-                            <div class="form-group">
-                                <label>Email Perusahaan</label>
-                                <input type="email" class="form-control" name="emailkantor" value="<?php echo $d['tenant_email']; ?>">
+                                <label>Password</label>
+                                <input type="password" class="form-control" name="password">
+                                <small>Kosongkan jika tidak ingin mengubah password.</small>
                             </div>
 
                             <div class="form-group">
