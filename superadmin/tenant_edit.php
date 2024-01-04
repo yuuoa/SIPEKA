@@ -62,12 +62,6 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control" name="password">
-                                <small>Kosongkan jika tidak ingin mengubah password.</small>
-                            </div>
-
-                            <div class="form-group">
                                 <label>Foto</label>
                                 <input type="file" name="foto">
                                 <small>Kosongkan jika tidak ingin mengubah foto.</small>

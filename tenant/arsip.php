@@ -60,12 +60,9 @@
                 <thead>
                     <tr>
                         <th class="text-center" width="1%">No</th>
-                        <th class="text-center">Tanggal</th>						
-                        <th class="text-center">Perusahaan</th>
-                        <th class="text-center">Kode</th>
-						<th class="text-center">Jenis Kegiatan</th>
+                        <th class="text-center">Tanggal</th>		
+                        <th class="text-center">Kode</th>	
                         <th class="text-center">Kategori</th>
-                        <th class="text-center">Nama PIC</th>
                         <th class="text-center">Status</th>
                         <th class="text-center" width="20%">OPSI</th>
                     </tr>
@@ -82,16 +79,13 @@
                             <td class="text-center"><?php echo $no++; ?></td>
                             <td class="text-center"><?php echo date('d-m-Y  H:i',strtotime($p['arsip_waktu_upload'])) ?></td>
                            
-                            <td class="text-center"><?php echo $p['tenant_nama'] ?></td>
                             <td class="text-center">
                                 <?php
                                 echo date('d.m.',strtotime($p['arsip_waktu_upload'])), $p['arsip_id'], "/KIM-", $p['tenant_kode'], "/", date('Y',strtotime($p['arsip_waktu_upload']));
                                  ?>
                             </td>
-							<td class="text-center"><?php echo $p['arsip_nama'] ?></td>
 
 							<td class="text-center"><?php echo $p['kategori_nama'] ?></td>							
-                            <td class="text-center"><?php echo $p['tenant_username'] ?></td>
                             <td>
                                 <?php                                     
                                     $status = $p['verifikasi_status'];

@@ -42,7 +42,7 @@
                 <div class="hpanel">
                     <div class="panel-body">
                     <div class="">
-                                <button target="login.php" class="btn-link"><i class="fa fa-arrow-left"></i> Kembali</button>
+                                <button target="./login.php" class="btn-link"><i class="fa fa-arrow-left"></i> Kembali</button>
                             </div>      
                         <form method="post" action="buat_akun_aksi.php" enctype="multipart/form-data">
                             <div class="form-group">                            
@@ -53,12 +53,12 @@
                                 </center>
                             </div>
                             <div class="form-group">
-                                <label>Nama Perusahaan</label>
-                                <input type="text" class="form-control" name="nama" required="required">
-                            </div>
-                            <div class="form-group">
                                 <label>Nama Lengkap</label>
                                 <input type="text" class="form-control" name="username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Nama Perusahaan</label>
+                                <input type="text" class="form-control" name="nama" required="required">
                             </div>
                             <div class="form-group">
                                 <label>Jabatan</label>
@@ -74,23 +74,11 @@
                             </div>
                             <div class="form-group">
                                 <label>Email Kantor</label>
-                                <input type="text" class="form-control" name="emailkantor" required="required">
-                            </div>
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control" name="password" required="required">
-                            </div>
-                            <div class="form-group">
-                                <label>Ulangi Password</label>
-                                <input type="password" class="form-control" name="password2" required="required">
-                            </div>
-                            <div class="form-group">
-                                <label>Logo</label>
-                                <input type="file" name="foto">
+                                <input type="email" class="form-control" name="emailkantor" required="required">
                             </div>
                             <div class="form-group">
                                 <label>Dokumen Surat Kuasa</label>
-                                <input type="file" name="suratkuasa" accept=".pdf,.jpeg,.png" required="required">
+                                <input type="file" name="suratkuasa" accept=".pdf,.jpeg,.png" required>
                                 <p style="color:red;"><em>.pfd, .jpeg, .png. Max. 2MB</em></p>
                             </div>
                             <div class="form-group">

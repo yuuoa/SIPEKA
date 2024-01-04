@@ -46,19 +46,8 @@
                     <form method="post" action="arsip_aksi.php" enctype="multipart/form-data">
 
                         <div class="form-group">
-                            <label>Kode Arsip (Kode.Bulan.Tahun)</label> 
-                            <input type="text" class="form-control" name="kode" required="required"  placeholder="Ex. KIM.05.2022">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Jenis Kegiatan</label>
-                            <input type="text" class="form-control" name="nama" required="required" placeholder="Ex. Otomotif">
-                        </div>
-
-                        <div class="form-group">
                             <label>Kategori</label>
                             <select class="form-control" name="kategori" required="required">
-                                <!-- <option value="">Pilih kategori</option> -->
                                 <?php 
                                 $kategori = mysqli_query($koneksi,"SELECT * FROM kategori");
                                 while($k = mysqli_fetch_array($kategori)){
@@ -72,8 +61,8 @@
 
                         <div class="form-group">
                             <label>File</label>
-                            <input type="file" name="file" accept=".pdf,.jpeg,.png">
-							<p style="color:red;"><em>.pfd, .jpeg, .png. Max. 2MB</em></p>
+                            <input type="file" name="file" accept=".pdf">
+							<p style="color:red;"><em>.PDF Max. 2MB</em></p>
                         </div>
 
                         <div class="form-group">

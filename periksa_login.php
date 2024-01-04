@@ -4,7 +4,9 @@ include 'koneksi.php';
 
 // menangkap data yang dikirim dari form
 $username = $_POST['username'];
+
 $password = md5($_POST['password']);
+$password2 = $_POST['password'];
 
 if($username == "nurdin"){
 
@@ -27,7 +29,7 @@ if($username == "nurdin"){
 }
 
 elseif($username == "fatur" || $username == "devita"){
-
+	
 	$login = mysqli_query($koneksi, "SELECT * FROM admin WHERE admin_username='$username' AND admin_password='$password'");
 	$cek = mysqli_num_rows($login);
 
@@ -48,7 +50,8 @@ elseif($username == "fatur" || $username == "devita"){
 
 else
 {
-		$login = mysqli_query($koneksi, "SELECT * FROM tenant WHERE tenant_username='$username' AND tenant_password='$password'");
+
+		$login = mysqli_query($koneksi, "SELECT * FROM tenant WHERE tenant_username='$username' AND tenant_password='$password' OR tenant_password='$password2'");
 		$cek = mysqli_num_rows($login);
 		if($cek > 0)
 		{
@@ -60,7 +63,10 @@ else
 			$_SESSION['status'] = "tenant_login";
 			if ($data['tenant_status'] == 1)
 			{
-				header("location:tenant/");
+				if($data['tenant_password'] == $password2)
+					header("location:tenant/gantipassword.php");
+				else
+					header("location:tenant/");
 			}
 			else
 			{

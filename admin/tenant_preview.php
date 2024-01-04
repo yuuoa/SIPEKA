@@ -7,13 +7,13 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="breadcome-heading">
-                                <h4 style="margin-bottom: 0px">Preview Arsip</h4>
+                                <h4 style="margin-bottom: 0px">Preview Tenant</h4>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <ul class="breadcome-menu" style="padding-top: 0px">
                                 <li><a href="#">Home</a> <span class="bread-slash">/</span></li>
-                                <li><span class="bread-blod">Preview Arsip</span></li>
+                                <li><span class="bread-blod">Preview Tenant</span></li>
                             </ul>
                         </div>
                     </div>
@@ -36,25 +36,45 @@
                     while($p = mysqli_fetch_array($data)){
                 ?>
                 <div class="panel-body">
-                            <div class="modal fade" id="aktivasi_<?php echo $p['tenant_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="aktivasiLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="aktivasiLabel">PERINGATAN!</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Apakah anda yakin ingin memverifikasi data ini? <br>pastikan data sudah dicek dengan benar.
+                    <div class="modal fade" id="aktivasi_<?php echo $p['tenant_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="aktivasiLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="aktivasiLabel">PERINGATAN!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Apakah anda yakin ingin mengaktivasi akun ini? <br>Silahkan masukkan kode perusahaan.
+                                </div>
+                                <?php 
+                                    $id = $p['tenant_id'];
+                                    $data = mysqli_query($koneksi, "select * from tenant where tenant_id='$id'");
+                                    while($d = mysqli_fetch_array($data))
+                                    {
+                                ?>
+                                    <form method="post" action="tenant_aktivasi.php" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <label>Kode perusahaan</label>
+                                            <input type="hidden" name="id" value="<?php echo $d['tenant_id']; ?>">
+                                            <input type="text" class="form-control" name="kode" required="required" value="<?php echo $d['tenant_kode']; ?>">
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i> &nbsp;Tidak</button>
-                                            <a href="tenant_aktivasi.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-primary"><i class="fa fa-check"></i> &nbsp; Ya</a>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                            <div class="form-group">
+                                            <label></label>
+                                            <input type="submit" class="btn btn-primary" value="Aktivasi">
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
+                                <?php 
+                                }
+                                ?>
                             </div>
+                        </div>
+                    </div>
+
                     <a href="tenant.php" class="btn btn-sm btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a><br><br>
                     
                     <?php if ($p['tenant_status'] == 0) : ?>
@@ -100,11 +120,9 @@
                             </table>
                         </div>
                         <div class="col-lg-8">
-                                <!-- <img src="../arsip/<?php echo $p['arsip_file']; ?>"> -->
                             <div class="pdf-singe-pro">
-                                <!-- <a class="media" href="../arsip/<?php echo $p['arsip_file']; ?>"></a> -->
+                                <a class="media" href="../arsip/dokumen_tenant/<?php echo $p['tenant_suratkuasa']; ?>"></a>
                             </div>
-                            <!-- <p>Preview tidak tersedia, silahkan <a target="_blank" style="color: blue" href="../arsip/<?php echo $p['arsip_file']; ?>">Download di sini.</a></p>. -->
                         </div>
                     </div>
                     <?php 

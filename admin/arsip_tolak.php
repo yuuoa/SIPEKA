@@ -3,7 +3,7 @@ include '../koneksi.php';
 session_start();
 date_default_timezone_set('Asia/Jakarta');
 
-$id  = $_POST['id'];
+$id = $_POST['id'];
 $keterangan = $_POST['keterangan'];
 $verifikasi_status = 3;
 
