@@ -45,39 +45,58 @@
                                 <button target="login.php" class="btn-link"><i class="fa fa-arrow-left"></i> Kembali</button>
                             </div>      
                         <form method="post" action="buat_akun_aksi.php" enctype="multipart/form-data">
-                            <div class="form-group">      
-                            
-                            <center>
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Daftar Akun Baru</h3>
-                            </div>
-                            </center>
-                                <div class="form-group">
-                                <label>Nama Perusahaan / Tenant</label>
-                                <input type="text" class="form-control" name="nama" required="required">
-                            </div>
+                            <div class="form-group">                            
+                                <center>
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Daftar Akun Baru</h3>
+                                </div>
+                                </center>
                             </div>
                             <div class="form-group">
-                            <label>Username</label>
-                            <input type="text" class="form-control" name="username" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" class="form-control" name="password" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Logo</label>
-                            <input type="file" name="foto">
-                        </div>
-                        <div class="form-group">
-                            <label>File</label>
-                            <input type="file" name="file" accept=".pdf,.jpeg,.png">
-							<p style="color:red;"><em>.pfd, .jpeg, .png. Max. 2MB</em></p>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-success btn-block loginbtn" value="Simpan">
-                        </div> 
-                    </div>                        
+                                <label>Nama Perusahaan</label>
+                                <input type="text" class="form-control" name="nama" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Nama Lengkap</label>
+                                <input type="text" class="form-control" name="username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Jabatan</label>
+                                <input type="text" class="form-control" name="jabatan" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor Telepon (WhatsApp)</label>
+                                <input type="text" class="form-control" name="teleponwa" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor Telepon Kantor</label>
+                                <input type="text" class="form-control" name="teleponkantor" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Kantor</label>
+                                <input type="text" class="form-control" name="emailkantor" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" name="password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Ulangi Password</label>
+                                <input type="password" class="form-control" name="password2" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Logo</label>
+                                <input type="file" name="foto">
+                            </div>
+                            <div class="form-group">
+                                <label>Dokumen Surat Kuasa</label>
+                                <input type="file" name="suratkuasa" accept=".pdf,.jpeg,.png" required="required">
+                                <p style="color:red;"><em>.pfd, .jpeg, .png. Max. 2MB</em></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-success btn-block loginbtn" value="Simpan">
+                            </div> 
+                        </div>                        
             <br>
             <div class="text-center login-footer">
                 <p class="text-muted">Copyright © <?php echo date('Y') ?>. PT. Mitra Karawangjaya</p>

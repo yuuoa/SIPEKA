@@ -2,16 +2,25 @@
 include './koneksi.php';
 $nama  = $_POST['nama'];
 $username = $_POST['username'];
+$jabatan = $_POST['jabatan'];
+$teleponwa = $_POST['teleponwa'];
+$teleponkantor = $_POST['teleponkantor'];
+$emailkantor = $_POST['emailkantor'];
 $password = md5($_POST['password']);
+$password2 = md5($_POST['password2']);
 
 $rand = rand();
 $allowed =  array('gif','png','jpg','jpeg');
-$filename = $_FILES['foto']['name'];
+$foto = $_FILES['foto']['name'];
+$suratkuasa = $_FILES['suratkuasa']['name'];
 
-if($filename == ""){
-	mysqli_query($koneksi, "insert into tenant values (NULL,'$nama','$username','$password','')");
+if($foto == "")
+{
+	mysqli_query($koneksi, "insert into tenant values (NULL,'$nama','$username','$jabatan,'$password','',NULL,'$teleponwa','$teleponkantor','$emailkantor','','$suratkuasa')");
 	header("location:login.php?alert=akun_baru");
-}else{
+}
+else
+{
 	$ext = pathinfo($filename, PATHINFO_EXTENSION);
 
 	if(!in_array($ext,$allowed) ) {

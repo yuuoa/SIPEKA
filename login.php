@@ -52,7 +52,7 @@
                     }else if($_GET['alert'] == "belum_login"){
                         echo "<div class='alert alert-warning'>ANDA HARUS LOGIN UNTUK MENGAKSES DASHBOARD.</div>";
                     }else if($_GET['alert'] == "akun_baru"){
-                        echo "<div class='alert alert-success'>SELAMAT, AKUN ANDA SUDAH TERDAFTAR.<br> SILAHKAN LAKUKAN PROSES LOGIN.</div>";
+                        echo "<div class='alert alert-success'>AKUN ANDA SUDAH TERDAFTAR.<br> SILAHKAN TUNGGU EMAIL KONFIRMASI DARI KAMI.</div>";
                     }else if($_GET['alert'] == "belum_aktif"){
                         echo "<div class='alert alert-danger'>MAAF, AKUN ANDA BELUM AKTIF<br>SILAHKAN MENUNGGU EMAIL LANJUTAN DARI KAMI.</div>";
                     }
@@ -77,7 +77,7 @@
                             </div>
                         </form>
                         <center>
-                            <a href="buat_akun.php" class="btn text-center btn-link" >Buat Akun</a>
+                            <a href="buat_akun.php" class="btn text-center btn-primary" >Buat Akun</a>
                         </center>
                     </div>                        
             <br>

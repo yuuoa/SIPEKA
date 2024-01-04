@@ -193,22 +193,22 @@
                             <div class="btn-group">
                             <?php if ($status == 0) : ?>
                                 <button title="verifikasi dokumen" type="button" class="btn btn-success" data-toggle="modal" data-target="#verifikasi_<?php echo $p['arsip_id']; ?>">
-                                    <i class="fa fa-check"></i>
+                                    <i class="fa fa-check"></i>Verifikasi Dokumen
                                 </button>
                                 <button title="tolak dokumen" type="button" class="btn btn-dark" data-toggle="modal" data-target="#tolakdokumen_<?php echo $p['arsip_id']; ?>">
-                                    <i class="fa fa-ban"></i>
+                                    <i class="fa fa-ban"></i>Tolak Dokumen
                                 </button>
                             <?php elseif ($status == 1) : ?>
                                 <button title="terbitkan tanda terima" type="button" class="btn btn-success" data-toggle="modal" data-target="#tandaterima_<?php echo $p['arsip_id']; ?>">
-                                    <i class="fa fa-qrcode"></i>
+                                    <i class="fa fa-qrcode"></i>Terbitkan Tanda Terima
                                 </button>
                                 <button title="batal verifikasi dokumen" type="button" class="btn btn-warning" data-toggle="modal" data-target="#batalverifikasi_<?php echo $p['arsip_id']; ?>">
-                                    <i class="fa fa-times"></i>
+                                    <i class="fa fa-times"></i>Batal Verifikasi
                                 </button>
                             <?php endif ?>
-                                <a target="_blank" title="Unduh Dokumen" class="btn btn-primary" href="../arsip/<?php echo $p['arsip_file']; ?>"><i class="fa fa-download"></i></a> 
+                                <a target="_blank" title="Unduh Dokumen" class="btn btn-primary" href="../arsip/<?php echo $p['arsip_file']; ?>"><i class="fa fa-download"></i>Unduh Dokumen</a> 
                                 
-                                <a target="_blank" title="Lihat Dokumen" href="arsip_preview.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-warning"><i class="fa fa-search"></i></a>
+                                <a target="_blank" title="Lihat Dokumen" href="arsip_preview.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-warning"><i class="fa fa-search"></i>Lihat Dokumen</a>
                                 
                                 <!-- <button title="hapus dokumen" type="button" class="btn btn-danger" data-toggle="modal" data-target="#hapus_<?php echo $p['arsip_id']; ?>">
                                     <i class="fa fa-trash"></i>

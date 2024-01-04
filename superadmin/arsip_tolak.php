@@ -5,7 +5,7 @@ date_default_timezone_set('Asia/Jakarta');
 
 $id  = $_POST['id'];
 $keterangan = $_POST['keterangan'];
-$verifikasi_status = 2;
+$verifikasi_status = 4;
 
 $_POST['validasi_status'] = $verifikasi_status;
 
