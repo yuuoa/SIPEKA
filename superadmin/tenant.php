@@ -88,7 +88,11 @@
                             </td>
                             <td class="text-center">
                                 <a href="tenant_preview.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-warning -5"><i class="fa fa-search"></i>&nbsp;Lihat Detil Tenant</a>
-                                <a href="tenant_edit.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-primary"><i class="fa fa-wrench"></i>&nbsp;Edit Tenant</a>
+                                <?php if ($status == 1): ?>
+                                    <a href="tenant_edit.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-primary"><i class="fa fa-wrench"></i>&nbsp;Edit Tenant</a>
+                                <?php elseif ($status == 0): ?>
+                                    <a href="#"></a>
+                                <?php endif ?>
                                 <a href="tenant_hapus.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;Hapus Tenant</a>
                             </td>
                         </tr>
