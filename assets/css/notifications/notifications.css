@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*----------------------------------------*/
 /*  1.  Notification CSS
 /*----------------------------------------*/
@@ -15,22 +14,4 @@
 .notification-bt .btn{
 	border-radius:0px;
 	margin-right:10px;
-=======
-/*----------------------------------------*/
-/*  1.  Notification CSS
-/*----------------------------------------*/
-.nt-mg-b-30{
-	margin-bottom:30px;
-}
-.nt-mg-b-40{
-	margin-bottom:40px;
-}
-.notification-list, .button-ad-wrap{
-	background:#fff;
-	padding:20px;
-}
-.notification-bt .btn{
-	border-radius:0px;
-	margin-right:10px;
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 }

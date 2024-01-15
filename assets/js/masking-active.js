@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (function ($) {
  "use strict";
 		// Masking form
@@ -11,18 +10,4 @@
 		$("#serial").mask('***-***-***-***-***-***', {placeholder:'_'});
 		$("#tax").mask('99-9999999', {placeholder:'X'});
  
-=======
-(function ($) {
- "use strict";
-		// Masking form
-		$('#postcode').mask('9999', {placeholder:'X'});
-		$('#year').mask('9999', {placeholder:'X'});
-		$('#cvv').mask('999', {placeholder:'X'});
-		$('#card').mask('9999-9999-9999-9999', {placeholder:'X'});
-		$("#phone").mask('(999) 999-9999', {placeholder:'X'});
-		$("#date").mask('99/99/9999', {placeholder:'X'});
-		$("#serial").mask('***-***-***-***-***-***', {placeholder:'_'});
-		$("#tax").mask('99-9999999', {placeholder:'X'});
- 
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 })(jQuery); 

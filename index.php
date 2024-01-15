@@ -18,11 +18,7 @@
 </head>
 
     <body class="bg-wt" >
-<<<<<<< HEAD
             <!-- <div class="error-pagewrap">
-=======
-            <div class="error-pagewrap">
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
         <div class="error-page-int">
             <div class="text-center m-b-md custom-login" style="width: 100%;">
 			
@@ -41,21 +37,12 @@
                         <center>
                             <h4>MENU LOGIN</h4>    
                         </center>
-<<<<<<< HEAD
 <center> -->
 				
 			<!--	<a href="user_login.php" ><i ></i> Login User</a> -->
 				<!-- <a href="login.php" ><i ></i>Pelaporan RKL/RPL</a> -->
 				<!-- <a href="www.google.com" ><i ></i>Pelaporan Baku Mutu</a> -->
                 <!-- <br>
-=======
-<center>
-				
-			<!--	<a href="user_login.php" ><i ></i> Login User</a> -->
-				<a href="login.php" ><i ></i>Pelaporan RKL/RPL</a>
-				<!-- <a href="www.google.com" ><i ></i>Pelaporan Baku Mutu</a> -->
-                <br>
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                 <br>
 					
                     </center>
@@ -74,11 +61,7 @@
             <img class="main-logo"src="assets/img/logo/logo.png" style="padding-top: 30px;" alt=""></a>
             </div>            
 			</center>
-<<<<<<< HEAD
 </div> -->
-=======
-</div>
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 		
 
    

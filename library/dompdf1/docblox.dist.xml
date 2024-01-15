@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" ?>
 <docblox>
   <parser>
@@ -18,25 +17,4 @@
   <transformations>
     <template name="new_black" />
   </transformations>
-=======
-<?xml version="1.0" encoding="UTF-8" ?>
-<docblox>
-  <parser>
-    <target>docs</target>
-  </parser>
-  <transformer>
-    <target>docs</target>
-  </transformer>
-  <files>
-    <directory>.</directory>
-    <ignore>*/lib/fonts/*</ignore>
-    <ignore>*/lib/html5lib/*</ignore>
-    <ignore>*/lib/php-font-lib/*</ignore>
-    <ignore>*www/*</ignore>
-    <ignore>*.svn*</ignore>
-  </files>
-  <transformations>
-    <template name="new_black" />
-  </transformations>
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 </docblox>

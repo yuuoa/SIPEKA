@@ -9,7 +9,6 @@ $kode = strtoupper($_POST['kode']);
 
 $_POST['tenant_status'] = $status;
 
-<<<<<<< HEAD
 $rand = rand();
 $allowed =  array('gif','png','jpg','jpeg');
 $filename = $_FILES['foto']['name'];
@@ -63,7 +62,3 @@ header("location:tenant_preview.php?id=$id");
 // }
 
 ?>
-=======
-mysqli_query($koneksi, "update tenant set tenant_kode='$kode', tenant_status='$status' where tenant_id='$id'")or die(mysqli_error($koneksi));
-header("location:tenant_preview.php?id=$id");
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d

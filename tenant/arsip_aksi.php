@@ -13,7 +13,6 @@ $rand = rand();
 $filename = $_FILES['file']['name'];
 $jenis = pathinfo($filename, PATHINFO_EXTENSION);
 
-<<<<<<< HEAD
 $semester = date('m');
 
 if($semester <= 1 && $semester >= 6)
@@ -24,9 +23,6 @@ else
 {
 	$kategori = 3;
 }
-=======
-$kategori = $_POST['kategori'];
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 $keterangan = '';
 
 if($jenis == "php") {
@@ -34,10 +30,6 @@ if($jenis == "php") {
 }else{
 	move_uploaded_file($_FILES['file']['tmp_name'], '../arsip/'.$rand.'_'.$filename);
 	$nama_file = $rand.'_'.$filename;
-<<<<<<< HEAD
 	mysqli_query($koneksi, "insert into arsip values (NULL,'$waktu',NULL,'$tenant','','','$jenis','$kategori','$keterangan','$nama_file','$status')")or die(mysqli_error($koneksi));
-=======
-	mysqli_query($koneksi, "insert into arsip values (NULL,'$waktu','$tenant','$kategori','$jenis','$keterangan','$nama_file','$status')")or die(mysqli_error($koneksi));
->>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 	header("location:arsip.php?alert=sukses");
 }
