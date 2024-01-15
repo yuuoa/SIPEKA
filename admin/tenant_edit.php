@@ -47,25 +47,50 @@
                     $data = mysqli_query($koneksi, "select * from tenant where tenant_id='$id'");
                     while($d = mysqli_fetch_array($data)){
                         ?>
-
+                        
                         <form method="post" action="tenant_update.php" enctype="multipart/form-data">
 
                             <div class="form-group">
-                                <label>Nama Perusahaan / Tenant</label>
+                                <label>Nama Perusahaan</label>
                                 <input type="hidden" name="id" value="<?php echo $d['tenant_id']; ?>">
-                                <input type="text" class="form-control" name="nama" required="required" value="<?php echo $d['tenant_nama']; ?>">
+                                <input type="text" class="form-control" name="nama" value="<?php echo $d['tenant_nama']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Kode Perusahaan</label>
+                                <input type="text" class="form-control" name="kode" value="<?php echo $d['tenant_kode']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Nama Lengkap Petugas</label>
+                                <input type="text" class="form-control" name="username" value="<?php echo $d['tenant_username']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Jabatan</label>
+                                <input type="text" class="form-control" name="jabatan" value="<?php echo $d['tenant_jabatan']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor Telepon (WhatsApp)</label>
+                                <input type="text" class="form-control" name="teleponwa" value="<?php echo $d['tenant_notelp']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor Telepon Kantor</label>
+                                <input type="text" class="form-control" name="teleponkantor" value="<?php echo $d['tenant_nokantor']; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Kantor</label>
+                                <input type="email" class="form-control" name="emailkantor" value="<?php echo $d['tenant_email']; ?>">
                             </div>
 
-                            <div class="form-group">
-                                <label>Username</label>
-                                <input type="text" class="form-control" name="username" required="required" value="<?php echo $d['tenant_username']; ?>">
-                            </div>
-
-                            <div class="form-group">
-                                <label>Password</label>
-                                <input type="password" class="form-control" name="password">
-                                <small>Kosongkan jika tidak ingin mengubah password.</small>
-                            </div>
+                            <?php 
+                            if($d['tenant_foto'] == ""){
+                                ?>
+                                <img class="img-user" src="../gambar/sistem/user.png">
+                                <?php
+                            }else{
+                                ?>
+                                <img class="img-user" src="../gambar/tenant/<?php echo $d['tenant_foto']; ?>">
+                                <?php
+                            }
+                        ?>
 
                             <div class="form-group">
                                 <label>Foto</label>

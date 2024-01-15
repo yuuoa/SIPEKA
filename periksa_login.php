@@ -28,7 +28,7 @@ if($username == "nurdin"){
 
 }
 
-elseif($username == "fatur" || $username == "devita"){
+elseif($username == "fathur" || $username == "devita"){
 	
 	$login = mysqli_query($koneksi, "SELECT * FROM admin WHERE admin_username='$username' AND admin_password='$password'");
 	$cek = mysqli_num_rows($login);

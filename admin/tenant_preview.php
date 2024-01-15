@@ -62,7 +62,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Foto</label>
-                                            <input type="file" name="foto" required="required"accept=".png,.jpg,.jpeg">
+                                            <input type="file" name="foto" accept=".png,.jpg,.jpeg">
 							                <p style="color:red;"><em>.PNG, .JPG, .JPEG Max. 2MB</em></p>
                                         </div>
                                         <div class="modal-footer">
@@ -71,7 +71,7 @@
                                             <input type="submit" class="btn btn-primary" value="Aktivasi
                                             ">
                                             
-                                            <a href="mailto:<?php echo $d['tenant_email']; ?>?cc=It_KiM@mitrakarawang.com, wtp.wwtp@mitrakarawang.com&subject=Masuk SIPEKA KIM&body=Akun anda sudah terverifikasi, silahkan masuk dengan email '<?php echo $d['tenant_email']; ?>' dan password '<?php echo $d['tenant_password']; ?>'. silahkan lakukan penggantian password setelah melakukan proses login.">Send Email</a>
+                                            <a href="mailto:<?php echo $d['tenant_email']; ?>?cc=It_KiM@mitrakarawang.com, wtp.wwtp@mitrakarawang.com&subject=Masuk SIPEKA KIM&body=Akun anda sudah teraktivasi. silahkan masuk dengan email '<?php echo $d['tenant_email']; ?>' dan password sementara '<?php echo $d['tenant_password']; ?>'. silahkan lakukan penggantian password setelah melakukan proses login.">Send Email</a>
 
                                         </div>
                                     </form>
@@ -83,11 +83,35 @@
                         </div>
                     </div>
 
+                    <div class="modal fade text-center" id="nonaktifkan_<?php echo $p['tenant_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="nonaktifkanLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="nonaktifkanLabel">PERINGATAN!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Apakah anda yakin ingin menonaktifkan data ini?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i> &nbsp;Tidak</button>
+                                    <a href="tenant_nonaktifkan.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-primary"><i class="fa fa-check"></i> &nbsp; Ya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="tenant.php" class="btn btn-sm btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a><br><br>
                     
                     <?php if ($p['tenant_status'] == 0) : ?>
                         <button title="Aktivasi Akun" type="button" class="btn btn-success" data-toggle="modal" data-target="#aktivasi_<?php echo $p['tenant_id']; ?>">
                             <i class="fa fa-check"></i>&nbsp;Aktivasi Akun
+                        </button>
+                    <?php elseif ($p['tenant_status'] == 1) : ?>
+                        <button title="Nonaktifkan Akun" type="button" class="btn btn-warning" data-toggle="modal" data-target="#nonaktifkan_<?php echo $p['tenant_id']; ?>">
+                            <i class="fa fa-times"></i>&nbsp;Nonaktifkan Akun
                         </button>
                     <?php endif ?>
                     <br>

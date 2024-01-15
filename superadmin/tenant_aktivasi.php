@@ -13,12 +13,21 @@ $rand = rand();
 $allowed =  array('gif','png','jpg','jpeg');
 $filename = $_FILES['foto']['name'];
 
-move_uploaded_file($_FILES['foto']['tmp_name'], '../gambar/tenant/'.$rand.'_'.$filename);
-$file_gambar = $rand.'_'.$filename;
+if($filename == "")
+{
+	mysqli_query($koneksi, "update tenant set tenant_kode='$kode', tenant_status='$status' where tenant_id='$id'")or die(mysqli_error($koneksi));
 
-mysqli_query($koneksi, "update tenant set tenant_kode='$kode', tenant_status='$status', tenant_foto='$file_gambar' where tenant_id='$id'")or die(mysqli_error($koneksi));
+	header("location:tenant_preview.php?id=$id");
+}
+else
+{
+    move_uploaded_file($_FILES['foto']['tmp_name'], '../gambar/tenant/'.$rand.'_'.$filename);
+    $file_gambar = $rand.'_'.$filename;
 
-header("location:tenant_preview.php?id=$id");
+    mysqli_query($koneksi, "update tenant set tenant_kode='$kode', tenant_status='$status', tenant_foto='$file_gambar' where tenant_id='$id'")or die(mysqli_error($koneksi));
+
+    header("location:tenant_preview.php?id=$id");
+}
 
 // $data = mysqli_query($koneksi, "select * from tenant where tenant_id='$id'");
 // while($d = mysqli_fetch_array($data))

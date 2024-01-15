@@ -79,7 +79,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Dokumen Surat Kuasa</label><i style="color:red;"><em>*</em></i>
-                                <input type="file" name="suratkuasa" accept=".pdf" required>
+                                <input type="file" id= "file" name="suratkuasa" accept=".pdf" required>
                                 <p style="color:red;"><em>.PDF Max. 2MB</em></p>
                             </div>
                             <div class="form-group">
@@ -93,6 +93,16 @@
             </div>
         </div>   
     </div>
+
+    <script type="text/javascript">
+        var uploadField = document.getElementById("file");
+        uploadField.onchange = function() {
+            if(this.files[0].size > 2200000){ // ini untuk ukuran 800KB, 1000000 untuk 1 MB.
+            alert("Maaf. File Terlalu Besar ! Maksimal Upload 2MB");
+            this.value = "";
+            };
+        };
+    </script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
