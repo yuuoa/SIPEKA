@@ -52,6 +52,7 @@
                                 </div>
                                 </center>
                             </div>
+<<<<<<< HEAD
                             <p style="color:red;"><em>*wajib diisi</em></p>
                             <div class="form-group">
                                 <label>Nama Lengkap</label><i style="color:red;"><em>*</em></i>
@@ -79,6 +80,34 @@
                             </div>
                             <div class="form-group">
                                 <label>Dokumen Surat Kuasa</label><i style="color:red;"><em>*</em></i>
+=======
+                            <div class="form-group">
+                                <label>Nama Lengkap</label>
+                                <input type="text" class="form-control" name="username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Nama Perusahaan</label>
+                                <input type="text" class="form-control" name="nama" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Jabatan</label>
+                                <input type="text" class="form-control" name="jabatan" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor Telepon (WhatsApp)</label>
+                                <input type="text" class="form-control" name="teleponwa" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Nomor Telepon Kantor</label>
+                                <input type="text" class="form-control" name="teleponkantor" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Kantor</label>
+                                <input type="email" class="form-control" name="emailkantor" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Dokumen Surat Kuasa</label>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                 <input type="file" name="suratkuasa" accept=".pdf" required>
                                 <p style="color:red;"><em>.PDF Max. 2MB</em></p>
                             </div>

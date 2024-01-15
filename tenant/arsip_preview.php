@@ -51,11 +51,15 @@
                                 <table class="table">
                                     <tr>
                                         <th>Kode Arsip</th>
+<<<<<<< HEAD
                                         <td>
                                             <?php
                                             echo date('d.m.',strtotime($d['arsip_waktu_upload'])), $d['arsip_id'], "/KIM-", $d['tenant_kode'], "/", date('Y',strtotime($d['arsip_waktu_upload']));
                                             ?>
                                         </td>
+=======
+                                        <td><?php echo $d['arsip_kode']; ?></td>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                     </tr>
                                     <tr>
                                         <th>Waktu Upload</th>
@@ -66,9 +70,23 @@
                                         <td><?php echo $d['tenant_nama']; ?></td>
                                     </tr>
                                     <tr>
+<<<<<<< HEAD
                                         <th>Kategori</th>
                                         <td><?php echo $d['kategori_nama']; ?></td>
                                     </tr>
+=======
+                                        <th>Jenis Kegiatan</th>
+                                        <td><?php echo $d['arsip_nama']; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Kategori</th>
+                                        <td><?php echo $d['kategori_nama']; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Jenis File</th>
+                                        <td><?php echo $d['arsip_jenis']; ?></td>
+                                    </tr>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                                                                     
                                 </table>
 

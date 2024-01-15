@@ -36,7 +36,11 @@
                     while($p = mysqli_fetch_array($data)){
                 ?>
                 <div class="panel-body">
+<<<<<<< HEAD
                     <div class="modal fade text-center" id="aktivasi_<?php echo $p['tenant_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="aktivasiLabel" aria-hidden="true">
+=======
+                    <div class="modal fade" id="aktivasi_<?php echo $p['tenant_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="aktivasiLabel" aria-hidden="true">
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -48,18 +52,28 @@
                                 <div class="modal-body">
                                     Apakah anda yakin ingin mengaktivasi akun ini? <br>Silahkan masukkan kode perusahaan.
                                 </div>
+<<<<<<< HEAD
                                     <?php 
                                         $id = $p['tenant_id'];
                                         $data = mysqli_query($koneksi, "select * from tenant where tenant_id='$id'");
                                         while($d = mysqli_fetch_array($data))
                                         {
                                     ?>
+=======
+                                <?php 
+                                    $id = $p['tenant_id'];
+                                    $data = mysqli_query($koneksi, "select * from tenant where tenant_id='$id'");
+                                    while($d = mysqli_fetch_array($data))
+                                    {
+                                ?>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                     <form method="post" action="tenant_aktivasi.php" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>Kode perusahaan</label>
                                             <input type="hidden" name="id" value="<?php echo $d['tenant_id']; ?>">
                                             <input type="text" class="form-control" name="kode" required="required" value="<?php echo $d['tenant_kode']; ?>">
                                         </div>
+<<<<<<< HEAD
                                         <div class="form-group">
                                             <label>Foto</label>
                                             <input type="file" name="foto" required="required"accept=".png,.jpg,.jpeg">
@@ -73,6 +87,13 @@
                                             
                                             <a href="mailto:<?php echo $d['tenant_email']; ?>?cc=It_KiM@mitrakarawang.com, wtp.wwtp@mitrakarawang.com&subject=Masuk SIPEKA KIM&body=Akun anda sudah terverifikasi, silahkan masuk dengan email '<?php echo $d['tenant_email']; ?>' dan password '<?php echo $d['tenant_password']; ?>'. silahkan lakukan penggantian password setelah melakukan proses login.">Send Email</a>
 
+=======
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                            <div class="form-group">
+                                            <label></label>
+                                            <input type="submit" class="btn btn-primary" value="Aktivasi">
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                         </div>
                                     </form>
                                 </div>
@@ -94,6 +115,7 @@
                     <br>
                     <div class="row">
                         <div class="col-lg-4">
+<<<<<<< HEAD
                                 <?php 
                                     if($p['tenant_foto'] == ""){
                                         ?>
@@ -105,6 +127,8 @@
                                         <?php
                                     }
                                 ?>
+=======
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                             <table class="table">
                                 <tr>
                                     <th>Nama Tenant</th>
@@ -119,15 +143,22 @@
                                     <td><?php echo $p['tenant_username']; ?></td>
                                 </tr>
                                 <tr>
+<<<<<<< HEAD
                                     <th>Jabatan</th>
                                     <td><?php echo $p['tenant_jabatan']; ?></td>
                                 </tr>
                                 <tr>
+=======
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                     <th>E-Mail Tenant</th>
                                     <td><?php echo $p['tenant_email']; ?></td>
                                 </tr>
                                 <tr>
+<<<<<<< HEAD
                                     <th>Nomor WhatsApp Tenant</th>
+=======
+                                    <th>Nomor Kontak Tenant</th>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                     <td><?php echo $p['tenant_notelp']; ?></td>
                                 </tr>
                                 <tr>

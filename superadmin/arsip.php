@@ -35,8 +35,12 @@
                     <tr>
                         <th class="text-center" width="1%">No</th>
                         <th class="text-center">Waktu Upload</th>
+<<<<<<< HEAD
                         <th class="text-center">Waktu Terbit Tanda Terima</th>
                         <th class="text-center">Kode Arsip</th>
+=======
+                        <th class="text-center">Arsip</th>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                         <th class="text-center">Kategori</th>
                         <th class="text-center">Nama Perusahaan / Tenant</th>
                         <th class="text-center">Status</th>
@@ -52,6 +56,7 @@
                         {
                     ?>
                     <tr>
+<<<<<<< HEAD
                         <td class="text-center"><?php echo $no++; ?></td>
                         <td class="text-center"><?php echo date('H:i:s  d-m-Y',strtotime($p['arsip_waktu_upload'])) ?></td>
                         <td class="text-center">
@@ -72,6 +77,16 @@
                         </td>
                         <td class="text-center"><?php echo $p['kategori_nama'] ?></td>
                         <td class="text-center"><?php echo $p['tenant_nama'] ?></td>
+=======
+                        <td><?php echo $no++; ?></td>
+                        <td><?php echo date('H:i:s  d-m-Y',strtotime($p['arsip_waktu_upload'])) ?></td>
+                        <td>
+                            <b>Kode</b> : <?php echo $p['arsip_kode'] ?><br>
+                            <b>Kegiatan</b> : <?php echo $p['arsip_nama'] ?><br>
+                        </td>
+                        <td><?php echo $p['kategori_nama'] ?></td>
+                        <td><?php echo $p['tenant_nama'] ?></td>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                         <td>
                             <?php                                     
                                 $status = $p['verifikasi_status'];
@@ -203,6 +218,7 @@
                                 </div>
                             </div>
 
+<<<<<<< HEAD
                             <?php if ($status == 0) : ?>
                                 <button title="verifikasi dokumen" type="button" class="btn btn-success" data-toggle="modal" data-target="#verifikasi_<?php echo $p['arsip_id']; ?>">
                                     <i class="fa fa-check"></i>&nbsp;Verifikasi Dokumen
@@ -221,10 +237,35 @@
                                 <a target="_blank" title="Unduh Dokumen" class="btn btn-primary" href="../arsip/<?php echo $p['arsip_file']; ?>"><i class="fa fa-download"></i>&nbsp;Unduh Dokumen</a> 
                                 
                                 <a target="_blank" title="Lihat Dokumen" href="arsip_preview.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-warning"><i class="fa fa-search"></i>&nbsp;Lihat Dokumen</a>
+=======
+                            <div class="btn-group">
+                            <?php if ($status == 0) : ?>
+                                <button title="verifikasi dokumen" type="button" class="btn btn-success" data-toggle="modal" data-target="#verifikasi_<?php echo $p['arsip_id']; ?>">
+                                    <i class="fa fa-check"></i>Verifikasi Dokumen
+                                </button>
+                                <button title="tolak dokumen" type="button" class="btn btn-dark" data-toggle="modal" data-target="#tolakdokumen_<?php echo $p['arsip_id']; ?>">
+                                    <i class="fa fa-ban"></i>Tolak Dokumen
+                                </button>
+                            <?php elseif ($status == 1) : ?>
+                                <button title="terbitkan tanda terima" type="button" class="btn btn-success" data-toggle="modal" data-target="#tandaterima_<?php echo $p['arsip_id']; ?>">
+                                    <i class="fa fa-qrcode"></i>Terbitkan Tanda Terima
+                                </button>
+                                <button title="batal verifikasi dokumen" type="button" class="btn btn-warning" data-toggle="modal" data-target="#batalverifikasi_<?php echo $p['arsip_id']; ?>">
+                                    <i class="fa fa-times"></i>Batal Verifikasi
+                                </button>
+                            <?php endif ?>
+                                <a target="_blank" title="Unduh Dokumen" class="btn btn-primary" href="../arsip/<?php echo $p['arsip_file']; ?>"><i class="fa fa-download"></i>Unduh Dokumen</a> 
+                                
+                                <a target="_blank" title="Lihat Dokumen" href="arsip_preview.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-warning"><i class="fa fa-search"></i>Lihat Dokumen</a>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                 
                                 <!-- <button title="hapus dokumen" type="button" class="btn btn-danger" data-toggle="modal" data-target="#hapus_<?php echo $p['arsip_id']; ?>">
                                     <i class="fa fa-trash"></i>
                                 </button> -->
+<<<<<<< HEAD
+=======
+                            </div>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                         </td>
                     </tr>
                     <?php 

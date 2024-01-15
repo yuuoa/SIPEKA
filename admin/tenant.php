@@ -80,16 +80,29 @@
                             <td>
                                 <?php                                     
                                 $status = $p['tenant_status'];
+<<<<<<< HEAD
                                 if ($status == 0) : ?>
+=======
+                            ?>
+                                <?php if ($status == 0) : ?>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                     <p class = "text-center "><strong class = "text-danger">Belum Aktif</strong></p>
                                 <?php elseif ($status == 1) : ?>
                                     <p class = "text-center "><strong class = "text-primary">Aktif</strong></p>
                                 <?php endif ?>
                             </td>
                             <td class="text-center">
+<<<<<<< HEAD
                                 <a href="tenant_preview.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-warning -5"><i class="fa fa-search"></i>&nbsp;Lihat Detil Tenant</a>
                                 <a href="tenant_edit.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-primary"><i class="fa fa-wrench"></i>&nbsp;Edit Tenant</a>
                                 <a href="tenant_hapus.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;Hapus Tenant</a>
+=======
+                                <div class="btn-group">
+                                    <a href="tenant_preview.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-default"><i class="fa fa-search"></i>&nbsp;Lihat Detil Tenant</a>
+                                    <a href="tenant_edit.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-default"><i class="fa fa-wrench"></i>&nbsp;Edit Tenant</a>
+                                    <a href="tenant_hapus.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-default"><i class="fa fa-trash"></i>&nbsp;Hapus Tenant</a>
+                                </div>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                             </td>
                         </tr>
                         <?php 

@@ -55,12 +55,26 @@
                     <ul class="metismenu" id="menu1">
                         <li class="active">
                             <a href="index.php">
+<<<<<<< HEAD
                                 <span class="fa fa-home icon-wrap"></span>
                                 <span class="mini-click-non">Dashboard</span>
                             </a>
                         </li>
                         <li>
                             <a href="tenant.php" aria-expanded="false"><span class="fa fa-users icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data Tenant</span></a>
+=======
+                                <span class="educate-icon educate-home icon-wrap"></span>
+                                <span class="mini-click-non">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            <a href="kategori.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data Kategori</span></a>
+                        </li> -->
+
+                        <li>
+                            <a href="tenant.php" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data Tenant</span></a>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                         </li>
 
                         <!-- <li>
@@ -68,7 +82,11 @@
                         </li> -->
 
                         <li>
+<<<<<<< HEAD
                             <a href="arsip.php" aria-expanded="false"><span class="fa fa-file-text icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data Arsip</span></a>
+=======
+                            <a href="arsip.php" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data Arsip</span></a>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                         </li>
 
                        <!-- <li>
@@ -76,6 +94,7 @@
                         </li>
 -->
 						<li>
+<<<<<<< HEAD
                             <a href="panduan.php" aria-expanded="false"><span class="fa fa-book icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Panduan</span></a>
                         </li>
 
@@ -86,6 +105,18 @@
                         <!-- <li>
                             <a href="logout.php" aria-expanded="false"><span class="fa fa-sign-out icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Logout</span></a>
                         </li> -->
+=======
+                            <a href="panduan.php" aria-expanded="false"><span class="educate-icon educate-form icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Panduan</span></a>
+                        </li>
+
+                        <li>
+                            <a href="gantipassword.php" aria-expanded="false"><span class="educate-icon educate-danger icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Ganti Password</span></a>
+                        </li>
+
+                        <li>
+                            <a href="logout.php" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Logout</span></a>
+                        </li>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 
                     </ul>
                 </nav>
@@ -121,7 +152,11 @@
                                     <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
                                             <ul class="nav navbar-nav mai-top-nav">
+<<<<<<< HEAD
                                                 <!-- <li class="nav-item"><a href="#" class="nav-link">SISTEM LAPORAN RKL/RPL KIM</a></li> -->
+=======
+                                                <li class="nav-item"><a href="#" class="nav-link">SISTEM LAPORAN RKL/RPL KIM</a></li>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                             </ul>
                                         </div>
                                     </div>
@@ -129,7 +164,11 @@
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
 
+<<<<<<< HEAD
                                                 <!-- <li class="nav-item">
+=======
+                                                <li class="nav-item">
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="educate-icon educate-bell" aria-hidden="true"></i><span class="indicator-nt"></span></a>
                                                     <div role="menu" class="notification-author dropdown-menu animated zoomIn">
                                                         <div class="notification-single-top">
@@ -160,7 +199,11 @@
                                                         <a href="riwayat.php">Lihat semua riwayat</a>
                                                     </div>
                                                 </div>
+<<<<<<< HEAD
                                             </li> -->
+=======
+                                            </li>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 
                                             <li class="nav-item">
                                                 <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
@@ -179,7 +222,11 @@
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
                                                 <li><a href="profil.php"><span class="edu-icon edu-home-admin author-log-ic"></span>Profil Saya</a></li>
+<<<<<<< HEAD
                                                 <!-- <li><a href="gantipassword.php"><span class="edu-icon edu-user-rounded author-log-ic"></span>Ganti Password</a></li> -->
+=======
+                                                <li><a href="gantipassword.php"><span class="edu-icon edu-user-rounded author-log-ic"></span>Ganti Password</a></li>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                                 <li><a href="logout.php"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a></li>
                                             </ul>
                                         </li>
@@ -202,6 +249,7 @@
                             <ul class="mobile-menu-nav">
                                 <li class="active">
                                     <a href="index.php">
+<<<<<<< HEAD
                                         <span class="fa fa-home icon-wrap"></span>
                                         <span class="mini-click-non">Dashboard</span>
                                     </a>
@@ -233,6 +281,39 @@
                                 <!-- <li>
                                     <a href="logout.php" aria-expanded="false"><span class="fa fa-sign-out icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Logout</span></a>
                                 </li> -->
+=======
+                                        <span class="educate-icon educate-home icon-wrap"></span>
+                                        <span class="mini-click-non">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="kategori.php" aria-expanded="false"><span class="educate-icon educate-course icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data Kategori</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="tenant.php" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data Tenant / Perusahaan</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="user.php" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data User</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="arsip.php" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Data Arsip</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="riwayat.php" aria-expanded="false"><span class="educate-icon educate-form icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Riwayat Unduh</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="gantipassword.php" aria-expanded="false"><span class="educate-icon educate-danger icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Ganti Password</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="logout.php" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Logout</span></a>
+                                </li>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                             </ul>
                         </nav>
                     </div>

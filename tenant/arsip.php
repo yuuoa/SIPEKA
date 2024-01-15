@@ -32,6 +32,7 @@
         </div>
         <div class="panel-body">
 
+<<<<<<< HEAD
             <?php
                 $today = date('d-m');
                 $semester = date('m');
@@ -87,6 +88,12 @@
                     }
                 }
             ?>
+=======
+
+            <div class="pull-right">
+                <a href="arsip_tambah.php" class="btn btn-primary"><i class="fa fa-cloud"></i> Unggah Arsip</a>
+            </div>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 
             <br>
             <br>
@@ -111,8 +118,12 @@
                 <thead>
                     <tr>
                         <th class="text-center" width="1%">No</th>
+<<<<<<< HEAD
                         <th class="text-center">Waktu Upload</th>
                         <th class="text-center">Waktu Terbit Tanda Terima</th>	
+=======
+                        <th class="text-center">Tanggal</th>		
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                         <th class="text-center">Kode</th>	
                         <th class="text-center">Kategori</th>
                         <th class="text-center">Status</th>
@@ -129,6 +140,7 @@
                         ?>
                         <tr>
                             <td class="text-center"><?php echo $no++; ?></td>
+<<<<<<< HEAD
                             <td class="text-center">
                                 <?php 
                                     echo date('H:i:s',strtotime($p['arsip_waktu_upload']));
@@ -147,28 +159,49 @@
                                 -
                             <?php endif ?>
                             </td>
+=======
+                            <td class="text-center"><?php echo date('d-m-Y  H:i',strtotime($p['arsip_waktu_upload'])) ?></td>
+                           
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                             <td class="text-center">
                                 <?php
                                 echo date('d.m.',strtotime($p['arsip_waktu_upload'])), $p['arsip_id'], "/KIM-", $p['tenant_kode'], "/", date('Y',strtotime($p['arsip_waktu_upload']));
                                  ?>
                             </td>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 							<td class="text-center"><?php echo $p['kategori_nama'] ?></td>							
                             <td>
                                 <?php                                     
                                     $status = $p['verifikasi_status'];
                                 ?>
                                 <?php if ($status == 0) : ?>
+<<<<<<< HEAD
                                     <p class = "text-center "><strong class = "text-danger">belum terverifikasi</strong></p>   
                                 <?php elseif ($status == 1) : ?>
                                     <p class = "text-center "><strong class = "text-primary">sudah terverifikasi</strong></p>
                                 <?php elseif ($status == 2) : ?>
                                     <p class = "text-center "><strong class = "text-success">Selesai Proses</strong></p>
                                 <?php elseif ($status == 3) : ?>
+=======
+                                    <p class = "text-center "><strong class = "text-danger">belum terverifikasi</strong></p>
+                                        
+                                <?php elseif ($status == 1) : ?>
+                                    <p class = "text-center "><strong class = "text-success">sudah terverifikasi</strong></p>
+
+                                <?php elseif ($status == 2) : ?>
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                     <p class = "text-center "><strong>tidak valid</strong></p>
                                     <b>Alasan</b> : <?php echo $p['arsip_keterangan'] ?><br>
                                 <?php endif ?>
                             </td>
                             <td class="text-center">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                 <div class="modal fade" id="exampleModal_<?php echo $p['arsip_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -177,17 +210,26 @@
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                             </div>
                                             <div class="modal-body">
                                                 Apakah anda yakin ingin menghapus data ini? <br>file dan semua yang berhubungan akan dihapus secara permanen.
                                             </div>
                                             <div class="modal-footer">
+<<<<<<< HEAD
+=======
+											
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                                                 <a href="arsip_hapus.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-danger"><i class="fa fa-check"></i> &nbsp; Ya, hapus</a> &nbsp;&nbsp;
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                                 <?php if ($status == 2) : ?>
                                 <a target="_blank" href="../tandaterima.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-primary"><i class="fa fa-qrcode"></i>&nbsp;Lihat Tanda Terima</a>
                                 <a target="_blank" title="Lihat Dokumen" href="arsip_preview.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-default"><i class="fa fa-search"></i>&nbsp;Lihat Dokumen</a>
@@ -197,6 +239,33 @@
                                 <a title="Edit Dokumen" href="arsip_edit.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-success"><i class="fa fa-pencil"></i>&nbsp;Edit Dokumen</a>
                                 <button title="Hapus Dokumen" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal_<?php echo $p['arsip_id']; ?>"><i class="fa fa-trash"></i>&nbsp;Hapus Dokumen</button>
                                 <?php endif ?>
+=======
+
+                                <?php if ($status == 1) : ?>
+
+								<div class="btn-group">
+                                    <a target="_blank" href="../tandaterima.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-primary"><i class="fa fa-qrcode"></i></a>
+                                    <a target="_blank" title="Lihat Dokumen" href="arsip_preview.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-default"><i class="fa fa-search"></i></a>
+
+                                </div>
+
+                                <?php elseif ($status != 1) : ?>
+                                    <div class="btn-group">
+								
+                                    <a target="_blank" title="Lihat Dokumen" href="arsip_preview.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-default"><i class="fa fa-search"></i></a>
+									                                    
+                                    <!-- <a target="_blank" title="Unduh Dokumen" class="btn btn-warning" href="../arsip/<?php echo $p['arsip_file']; ?>"><i class="fa fa-download"></i></a>  -->
+
+                                    <a title="Edit Dokumen" href="arsip_edit.php?id=<?php echo $p['arsip_id']; ?>" class="btn btn-success"><i class="fa fa-pencil"></i></a>
+
+                                    <button title="Hapus Dokumen" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal_<?php echo $p['arsip_id']; ?>">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+
+                                    </div>  
+                                <?php endif ?>
+
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
                             </td>
                         </tr>
                         <?php 
@@ -204,7 +273,18 @@
                     ?>
                 </tbody>
             </table>
+<<<<<<< HEAD
         </div>
     </div>
 </div>
+=======
+
+
+        </div>
+
+    </div>
+</div>
+
+
+>>>>>>> 611e77ae89cd9b84b10f51cb1675f1cc82593a4d
 <?php include 'footer.php'; ?>
