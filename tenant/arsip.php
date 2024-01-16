@@ -34,6 +34,7 @@
 
             <?php
                 $today = date('d-m');
+                echo ($today);
                 $semester = date('m');
                 $year = date('Y');
                 if ($semester >= '01' && $semester <= '06')
@@ -49,7 +50,7 @@
                         </div>
                         <?php
                     }
-                    else
+                    elseif ($today >= '01-06' && $today <= '30-06')
                     {
                         ?>
                         <div class="alert alert-warning">
@@ -61,7 +62,7 @@
                         <?php
                     }
                 }
-                else
+                elseif ($semester >= '06' && $semester <= '12')
                 {
                     if ($today >= '01-07' && $today <= '30-11')
                     {
@@ -74,7 +75,7 @@
                         </div>
                         <?php
                     }
-                    else
+                    elseif ($today >= '01-12' && $today <= '31-12')
                     {
                         ?>
                         <div class="alert alert-warning">

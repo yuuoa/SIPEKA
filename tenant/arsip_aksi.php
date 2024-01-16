@@ -12,18 +12,7 @@ $rand = rand();
 
 $filename = $_FILES['file']['name'];
 $jenis = pathinfo($filename, PATHINFO_EXTENSION);
-
-$semester = date('m');
-
-if($semester <= 1 && $semester >= 6)
-{
-	$kategori = 4;
-}
-else
-{
-	$kategori = 3;
-}
-$keterangan = '';
+$kategori = $_POST['kategori'];
 
 if($jenis == "php") {
 	header("location:arsip.php?alert=gagal");

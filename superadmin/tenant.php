@@ -87,13 +87,58 @@
                                 <?php endif ?>
                             </td>
                             <td class="text-center">
+
+                                <div class="modal fade" id="hapusTenant_<?php echo $p['tenant_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="hapusTenantLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="hapusTenantLabel">PERINGATAN!</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Apakah anda ingin menghapus data tenant ini?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i> &nbsp;Tidak</button>
+                                                <button title="Hapus Tenant" type="button" class="btn btn-danger" data-toggle="modal" data-target="#hapusTenantVerification_<?php echo $p['tenant_id']; ?>">
+                                                    <i class="fa fa-check"></i>&nbsp;Ya
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="hapusTenantVerification_<?php echo $p['tenant_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="hapusTenantVerificationLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="hapusTenantVerificationLabel">PERINGATAN!</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Apakah anda yakin? data tenant yang telah terhapus tidak dapat dikembalikan kembali.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i> &nbsp;Tidak</button>
+                                                <a href="tenant_hapus.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-danger"><i class="fa fa-check"></i> &nbsp; Ya</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <a href="tenant_preview.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-warning -5"><i class="fa fa-search"></i>&nbsp;Lihat Detil Tenant</a>
                                 <?php if ($status == 1): ?>
                                     <a href="tenant_edit.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-primary"><i class="fa fa-wrench"></i>&nbsp;Edit Tenant</a>
                                 <?php elseif ($status == 0): ?>
                                     <a href="#"></a>
                                 <?php endif ?>
-                                <a href="tenant_hapus.php?id=<?php echo $p['tenant_id']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;Hapus Tenant</a>
+                                <button title="Hapus Tenant" type="button" class="btn btn-danger" data-toggle="modal" data-target="#hapusTenant_<?php echo $p['tenant_id']; ?>">
+                                    <i class="fa fa-trash"></i>&nbsp;Hapus Tenant
+                                </button>
                             </td>
                         </tr>
                         <?php 

@@ -73,7 +73,7 @@
                                     </table>
                                 </tbody>
                                 <?php if ($status == 2) : ?>
-                                    <a><img class="main-logo" style="width: 100px; margin-top: 30px; margin-bottom: 10px;"  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://localhost/arsip/tandaterima.php?id=<?php echo $id ?>" alt="" /></a>
+                                    <a><img class="main-logo" style="width: 100px; margin-top: 30px; margin-bottom: 10px;"  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://sipeka.kimresidence.co.id/tandaterima.php?id=<?php echo $id ?>" alt="" /></a>
                                     <p style="text-align: justify">
                                     Dokumen ini sah, diterbitkan secara elektronik melalui SIPEKA Pengelola Kawasan Industri Mitrakarawang sehingga tidak memerlukan cap dan tanda tangan basah.</b>Surat Keterangan ini dibuat sebagai kelengkapan pengurusan <b></b>.</p>
                                 <p style="text-align: justify">Terima kasih telah menyampaikan laporan pengelolaan dan pemantauan lingkungan</p>

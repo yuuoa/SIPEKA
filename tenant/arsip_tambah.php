@@ -47,6 +47,19 @@
 
                         <p style="color:red;"><em>*wajib diisi</em></p>
                         
+                        <div class="form-group">
+                            <label>Kategori</label>
+                            <select class="form-control" name="kategori" required="required">
+                                <?php 
+                                $kategori = mysqli_query($koneksi,"SELECT * FROM kategori");
+                                while($k = mysqli_fetch_array($kategori)){
+                                    ?>
+                                    <option value="<?php echo $k['kategori_id']; ?>"><?php echo $k['kategori_nama']; ?></option>
+                                    <?php 
+                                }
+                                ?>
+                            </select>
+                            </div>
 
                         <div class="form-group">
                             <label>File</label><i style="color:red;"><em>*</em></i>
