@@ -1,0 +1,52 @@
+[22-Jul-2025 06:38:01 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:38:01 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:38:03 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:38:03 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:38:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:38:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:42:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:42:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:54:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:54:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:54:06 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:54:06 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:54:11 UTC] PHP Warning:  unlink(../gambar/tenant/): Is a directory in /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php on line 8
+[22-Jul-2025 06:54:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php:8) in /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php on line 10
+[22-Jul-2025 06:54:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:54:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:54:20 UTC] PHP Warning:  unlink(../gambar/tenant/): Is a directory in /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php on line 8
+[22-Jul-2025 06:54:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php:8) in /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php on line 10
+[22-Jul-2025 06:54:29 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:54:29 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:54:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:54:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:55:35 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:55:35 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:55:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:55:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:55:40 UTC] PHP Warning:  unlink(../gambar/tenant/): Is a directory in /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php on line 8
+[22-Jul-2025 06:55:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php:8) in /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php on line 10
+[22-Jul-2025 06:55:42 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:55:42 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:56:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:56:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:56:12 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:56:12 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:56:14 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:56:14 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:56:32 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:56:32 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:56:36 UTC] PHP Warning:  unlink(../gambar/tenant/): Is a directory in /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php on line 8
+[22-Jul-2025 06:56:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php:8) in /home/mitrakar/sipeka/supersuperadmin/tenant_hapus.php on line 10
+[22-Jul-2025 06:57:17 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:57:17 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:57:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:57:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 06:57:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 06:57:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 07:04:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 07:04:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 07:04:13 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 07:04:13 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
+[22-Jul-2025 07:13:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/header.php on line 142
+[22-Jul-2025 07:13:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/mitrakar/sipeka/supersuperadmin/footer.php on line 79
