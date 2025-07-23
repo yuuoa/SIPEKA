@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -34,15 +33,10 @@
         <div class="error-page-int">
             <div class="text-center custom-login">
             <img  src="gambar/sistem/logo.png"  style="width: 200px;">
-
             </div>
-
-            <br>
-            <br>
-            
+            <br><br>
             <div class="content-error">
                 <?php 
-                // pesan notifikasi
                 if(isset($_GET['alert'])){
                     if($_GET['alert'] == "gagal"){
                         echo "<div class='alert alert-danger'>LOGIN GAGAL! USERNAME DAN PASSWORD SALAH!.</div>";
@@ -77,7 +71,6 @@
                     </div> 
                         </form>
                     <br>
-                           
                     <center>
                             <table>
                                 <tr>

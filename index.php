@@ -18,56 +18,6 @@
 </head>
 
     <body class="bg-wt" >
-            <!-- <div class="error-pagewrap">
-        <div class="error-page-int">
-            <div class="text-center m-b-md custom-login" style="width: 100%;">
-			
-            <img class="main-logo"src="assets/img/logo/sipeka.png" style="padding-bottom: 50px; " alt=""></a>
-
-            </div>
-			
-			
-			
-            <div class="content-error">
-             
-                <div class="hpanel">
-				<br>
-				<br>
-                    <div class="panel-body">
-                        <center>
-                            <h4>MENU LOGIN</h4>    
-                        </center>
-<center> -->
-				
-			<!--	<a href="user_login.php" ><i ></i> Login User</a> -->
-				<!-- <a href="login.php" ><i ></i>Pelaporan RKL/RPL</a> -->
-				<!-- <a href="www.google.com" ><i ></i>Pelaporan Baku Mutu</a> -->
-                <!-- <br>
-                <br>
-					
-                    </center>
-                </div>
-           </div>
-
-           <br>
-           <br>
-           <br>
-           <br>
-           <br>
-           <br>
-
-            <center>
-           <div class="text-center m-b-md custom-login" style="width: 40%;">
-            <img class="main-logo"src="assets/img/logo/logo.png" style="padding-top: 30px;" alt=""></a>
-            </div>            
-			</center>
-</div> -->
-		
-
-   
-
-
-
         <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
     </body>

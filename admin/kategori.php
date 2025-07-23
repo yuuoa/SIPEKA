@@ -1,5 +1,4 @@
 <?php include 'header.php'; ?>
-
 <div class="breadcome-area">
     <div class="container-fluid">
         <div class="row">
@@ -23,23 +22,16 @@
         </div>
     </div>
 </div>
-
 <div class="container-fluid">
     <div class="panel panel">
-
         <div class="panel-heading">
             <h3 class="panel-title">Data kategori</h3>
         </div>
         <div class="panel-body">
-
-
             <div class="pull-right">
                 <a href="kategori_tambah.php" class="btn btn-primary"><i class="fa fa-plus"></i> Tambah kategori</a>
             </div>
-
-            <br>
-            <br>
-            <br>
+            <br><br><br>
             <table id="table" class="table table-bordered table-striped table-hover table-datatable">
                 <thead>
                     <tr>
@@ -68,22 +60,13 @@
                                         <a href="kategori_edit.php?id=<?php echo $p['kategori_id']; ?>" class="btn btn-default"><i class="fa fa-wrench"></i></a>
                                         <a href="kategori_hapus.php?id=<?php echo $p['kategori_id']; ?>" class="btn btn-default"><i class="fa fa-trash"></i></a>
                                     </div>
-                                    <?php
-                                }
-                                ?>
+                                    <?php } ?>
                             </td>
                         </tr>
-                        <?php 
-                    }
-                    ?>
+                        <?php } ?>
                 </tbody>
             </table>
-
-
         </div>
-
     </div>
 </div>
-
-
 <?php include 'footer.php'; ?>

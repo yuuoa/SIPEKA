@@ -10,7 +10,6 @@
         header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
     }
     ?>
-
 <!doctype html>
 <html>
 <head>
@@ -42,8 +41,6 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/js/DataTables/datatables.css">
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
-    
 </head>
 <body>
     <div class="left-sidebar-pro">
@@ -52,9 +49,7 @@
                 <strong><a><img src="../gambar/sistem/logo-icon.png" alt="" width="40px"/></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar hidden-print">
-
                 <nav class="sidebar-nav left-sidebar-menu-pro" style="margin-top: 30px">
-
                     <ul class="metismenu" id="menu1">
                         <li class="active">
                             <a href="index.php">
@@ -62,21 +57,17 @@
                                 <span class="mini-click-non">Dashboard</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="arsip.php" aria-expanded="false"><span class="fa fa-file-text icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Arsip Saya</span></a>
                         </li>
-
 						 <li>
                             <a href="panduan.php" aria-expanded="false"><span class="fa fa-book icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Panduan</span></a>
                         </li>
-
                     </ul>
                 </nav>
             </div>
         </nav>
     </div>
-    
     <div class="all-content-wrapper ">
         <div class="container-fluid ">
             <div class="row">
@@ -101,16 +92,13 @@
                                             </button>
                                         </div>
                                     </div>
-
                                     <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12">
-                                         <div class="col-lg-12 col-md-12">
-                                        </div>
-                                
+                                        <div class="col-lg-12 col-md-12">
+                                    </div>
                                 </div>
                                     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
-
                                             <li class="nav-item">
                                                 <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                     <?php 
@@ -141,6 +129,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Mobile Menu start -->
     <div class="mobile-menu-area hidden-print">
         <div class="container">
@@ -168,4 +157,3 @@
             </div>
         </div>
     </div>
-</div>

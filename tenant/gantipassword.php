@@ -1,18 +1,14 @@
 <?php include 'header.php'; ?>
-
 <div class="breadcome-area">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="breadcome-list">
                 <div class="panel">
-
                     <div class="panel-heading">
                         <h3 class="panel-title">Ganti Password</h3>
                     </div>
-
                     <div class="panel-body">
-
                         <?php 
                         if(isset($_GET['alert'])){
                             if($_GET['alert'] == "sukses"){
@@ -23,7 +19,6 @@
                             }
                         }
                         ?>
-
                         <form action="gantipassword_act.php" method="post">
                             <div class="form-group">
                                 <label>Masukkan Password Baru</label>
@@ -37,24 +32,12 @@
                                 <input type="submit" class="btn btn-primary" value="Simpan" id='hulk'></input>
                             </div>
                         </form>
-
                     </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+<br><br><br><br><br><br><br><br><br>
 <?php include 'footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php';?>
 
 <div class="breadcome-area">
     <div class="container-fluid">
@@ -23,7 +23,6 @@
         </div>
     </div>
 </div>
-
 <div class="traffice-source-area mg-b-30">
     <div class="container-fluid">
         <div class="row">
@@ -31,15 +30,11 @@
                 <div class="white-box analytics-info-cs">
                     <h3 class="box-title">Tenant</h3>
                     <ul class="list-inline two-part-sp">
-                        <li>
-                            <div id="sparklinedash"></div>
-                        </li>
+                        <li><div id="sparklinedash"></div></li>
                         <li class="text-right sp-cn-r">
                             <i class="fa fa-level-up" aria-hidden="true"></i> 
                             <span class="counter text-success">
-                                <?php 
-                                $jumlah_tenant = mysqli_query($koneksi,"select * from tenant");
-                                ?>
+                                <?php $jumlah_tenant = mysqli_query($koneksi,"select * from tenant"); ?>
                                 <span class="counter"><?php echo mysqli_num_rows($jumlah_tenant); ?></span>
                             </span>
                         </li>
@@ -50,15 +45,11 @@
                 <div class="white-box analytics-info-cs res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
                     <h3 class="box-title">Total Arsip</h3>
                     <ul class="list-inline two-part-sp">
-                        <li>
-                            <div id="sparklinedash3"></div>
-                        </li>
+                        <li><div id="sparklinedash3"></div></li>
                         <li class="text-right graph-three-ctn">
                             <i class="fa fa-level-up" aria-hidden="true"></i> 
                             <span class="counter text-info">
-                                <?php 
-                                $jumlah_arsip = mysqli_query($koneksi,"select * from arsip");
-                                ?>
+                                <?php $jumlah_arsip = mysqli_query($koneksi,"select * from arsip"); ?>
                                 <span class="counter"><?php echo mysqli_num_rows($jumlah_arsip); ?></span>
                             </span>
                         </li>
@@ -68,43 +59,37 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="white-box analytics-info-cs res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
                     <h3 class="box-title">Tenant Belum Upload</h3>
-                    <table id="table" class="table table-bordered table-striped table-hover table-datatable">
-                <thead>
-                    <tr>
-                        <th width="1%">No</th>
-                        <th width="5%">Foto</th>
-                        <th class="text-center">Nama Perusahaan / Tenant</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php 
-                    include '../koneksi.php';
-                    $no = 1;
-                    $tenant = mysqli_query($koneksi,"SELECT * FROM tenant WHERE tenant_sudah=0 ORDER BY tenant_id DESC");
-                    while($p = mysqli_fetch_array($tenant)){
-                        ?>
-                        <tr class="text-center">
-                            <td><?php echo $no++; ?></td>
-                            <td>
+                    <div class="table-responsive" style="height: 200px;">
+                        <table id="table" class="table table-bordered table-striped table-hover table-datatable">
+                            <thead style="position: sticky; top: 0;" class="thead-light bg-success">
+                                <tr>
+                                    <th style="position: sticky; top: 0;" width="1%" scope="col">No</th>
+                                    <th style="position: sticky; top: 0;" width="5%" scope="col">Foto</th>
+                                    <th style="position: sticky; top: 0;" class="text-center" scope="col">Nama Perusahaan / Tenant</th>
+                                </tr>
+                            </thead>
+                            <tbody style="overflow-y: auto;">
                                 <?php 
-                                if($p['tenant_foto'] == ""){
+                                include '../koneksi.php';
+                                $no = 1;
+                                $tenant = mysqli_query($koneksi,"SELECT * FROM tenant WHERE tenant_sudah=0 ORDER BY tenant_id DESC");
+                                while($p = mysqli_fetch_array($tenant)){
                                     ?>
-                                    <img class="img-user" src="../gambar/sistem/user.png">
-                                    <?php
-                                }else{
-                                    ?>
-                                    <img class="img-user" src="../gambar/tenant/<?php echo $p['tenant_foto']; ?>">
-                                    <?php
-                                }
-                                ?>
-                            </td>
-                            <td><?php echo $p['tenant_nama'] ?></td>
-                        </tr>
-                        <?php 
-                    }
-                    ?>
-                </tbody>
-            </table>
+                                    <tr class="text-center">
+                                        <td><?php echo $no++; ?></td>
+                                        <td>
+                                            <?php if($p['tenant_foto'] == ""){ ?>
+                                                <img class="img-user" src="../gambar/sistem/user.png">
+                                                <?php }else{ ?>
+                                                <img class="img-user" src="../gambar/tenant/<?php echo $p['tenant_foto']; ?>">
+                                                <?php } ?>
+                                        </td>
+                                        <td><?php echo $p['tenant_nama'] ?></td>
+                                    </tr>
+                                    <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

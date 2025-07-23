@@ -1,100 +1,26 @@
 <?php include 'header.php'; include 'breadcome.php';?>
-
 <?php 
     $tenants = mysqli_query($koneksi,"select * from tenant where tenant_id='$id_tenant'");
     $tenants = mysqli_fetch_assoc($tenants);
     if ($tenants['tenant_sudah'] < 1) {
         $today = date('d-m');
         $month = date('m');
+        $semester = date('m');
         $year = date('Y');
-        switch ($month) {
-            case '01': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester II adalah <b>28 Februari <?php echo $year ?></b></p>
-                </div>
-            <?php
-            break;
-            case '02': ?>
-                <div class="alert alert-danger">
-                    <p class="text-center">Batas waktu upload dokumen semester II adalah <b>28 Februari <?php echo $year ?></b> segera upload dokumen perusahaan anda!</p>
-                </div>
-            <?php
-            break;
-            case '03': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?></b> segera upload dokumen perusahaan anda!</p>
-                </div>
-                <?php
-                break;
-            case '04': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?></b></p>
-                </div>
-                <?php
-                break;
-            case '05': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?></b></p>
-                </div>
-                <?php
-                break;
-            case '06': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?></b></p>
-                </div>
-                <?php
-                break;
-            case '07': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?></b></p>
-                </div>
-                <?php
-                break;
-            case '08': ?>
-                <div class="alert alert-danger">
-                    <p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?></b> segera upload dokumen perusahaan anda!</p>
-                </div>
-                <?php
-                break;
-            case '09': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester II adalah <b>28 Februari <?php echo $year ?></b> segera upload dokumen perusahaan anda!</p>
-                </div>
-            <?php
-            break;
-            case '10': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester II adalah <b>28 Februari <?php echo $year ?></b></p>
-                </div>
-            <?php
-            break;
-            case '11': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester II adalah <b>28 Februari <?php echo $year ?></b></p>
-                </div>
-            <?php
-            break;
-            case '12': ?>
-                <div class="alert alert-warning">
-                    <p class="text-center">Batas waktu upload dokumen semester II adalah <b>28 Februari <?php echo $year ?></b></p>
-                </div>
-            <?php
-            break;
-            default: ?>
-            <?php
-        }
-    }
+        if ($month == 1 || $month == 2 || $month == 9 || $month == 10 || $month == 11 || $month == 12) { ?>
+            <div class="alert alert-danger"><p class="text-center">Batas waktu upload dokumen semester II adalah <b>28 Februari <?php echo $year ?><?php if ($month == 2) { ?></b> segera upload dokumen perusahaan anda!</p><?php } ?></div>
+            <div class="pull-right"><a href="arsip_tambah.php" class="btn btn-primary"><i class="fa fa-cloud"></i> Unggah Arsip</a></div>
+        <?php }
+        elseif ($month == 3 || $month == 4 || $month == 5 || $month == 6 || $month == 7 || $month == 8) { ?>
+            <div class="alert alert-danger"><p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?><?php if ($month == 8) { ?></b> segera upload dokumen perusahaan anda!</p><?php } ?></b> segera upload dokumen perusahaan anda!</p></div>
+            <div class="pull-right"><a href="arsip_tambah.php" class="btn btn-primary"><i class="fa fa-cloud"></i> Unggah Arsip</a></div>
+        <?php } ?>
+        <?php }
     elseif ($tenants['tenant_sudah'] > 0) { ?>
-    <div class="alert alert-success">
-        <p class="text-center">Terima kasih, dokumen anda sudah kami terima. Silahkan menunggu periode selanjutnya. Jika anda ingin menambahkan arsip, silahkan hubungi email <b><a href="mailto:ehs@mitrakarawang.com">ehs@mitrakarawang.com</a></b></p>
-    </div>
-    <?php
-    }
-    ?>
-
+    <div class="pull-right"><a href="arsip_tambah.php" class="btn btn-primary"><i class="fa fa-cloud"></i> Unggah Arsip</a></div>
+<?php } ?>
 <div class="traffice-source-area mg-b-30">
     <div class="container-fluid">
-        
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="white-box analytics-info-cs res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
@@ -119,5 +45,4 @@
         </div>
     </div>
 </div>
-
 <?php include 'footer.php'; ?>

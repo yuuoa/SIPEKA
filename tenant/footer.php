@@ -1,15 +1,5 @@
-
-<div class="static-bottom footer-copyright-area mg-t-30">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="footer-copy-right">
-					<p><?php include 'version.php'; ?></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<div style="background-color: green; color: white; padding: 15px; text-align: center;">
+	<p><?php include '../version.php'; ?></p></div>
 </div>
 <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
 <script src="../assets/js/bootstrap.min.js"></script>
@@ -45,7 +35,6 @@
 $('#txtConfirmPassword').on('keyup', function () {
     var password = $("#txtNewPassword").val();
     var confirmPassword = $("#txtConfirmPassword").val();
-
     if (password != confirmPassword) {
         $("#divCheckPassword").html("Passwords do not match!");
     } else {
@@ -57,11 +46,9 @@ $('#txtConfirmPassword').on('keyup', function () {
 <script type="text/javascript">
 	$(document).ready( function () {
 		$('.table-datatable').DataTable();
-
 		Morris.Area({
 			element: 'extra-area-chart',
 			data: [
-
 			<?php 
 			$dateBegin = strtotime("first day of this month");  
 			$dateEnd = strtotime("last day of this month");
@@ -82,7 +69,6 @@ $('#txtConfirmPassword').on('keyup', function () {
 				<?php 
 			}
 			?>
-
 			],
 			xkey: 'period',
 			ykeys: ['Unduh'],
@@ -98,15 +84,12 @@ $('#txtConfirmPassword').on('keyup', function () {
 			hideHover: 'auto',
 			lineColors: ['#006DF0'],
 			resize: true
-
 		});
 	});
-
 	$("#print-btn").on("click", function(){
-            var divToPrint=document.getElementById('product-details');
-            type="text/javascript">window.print();
+		var divToPrint=document.getElementById('product-details');
+		type="text/javascript">window.print();
     });
-
 var uploadField = document.getElementById("file");
 uploadField.onchange = function() {
     if(this.files[0].size > 200000){ // ini untuk ukuran 800KB, 1000000 untuk 1 MB.
@@ -114,7 +97,6 @@ uploadField.onchange = function() {
        this.value = "";
     };
 };
-
 </script>
 </body>
 </html>

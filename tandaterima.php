@@ -63,11 +63,6 @@
                                             <td width="5%">:</td>
                                             <td><?php echo date('H:i:s d-m-Y ',strtotime($p['arsip_waktu_verifikasi'])) ?></td>
                                         </tr>
-                                        <!-- <tr> -->
-                                            <!-- <th>Jenis Kegiatan</th> -->
-                                            <!-- <td width="5%">:</td> -->
-                                            <!-- <td><?php echo $p['arsip_nama']; ?></td> -->
-                                        <!-- </tr> -->
                                         <tr>
                                             <th>Kategori</th>
                                             <td width="5%">:</td>

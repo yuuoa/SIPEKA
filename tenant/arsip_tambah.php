@@ -1,27 +1,18 @@
 <?php include 'header.php'; include 'breadcome.php';?>
-
 <div class="container-fluid">
-
     <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
             <div class="panel panel">
-
                 <div class="panel-heading">
                     <h3 class="panel-title">Upload arsip</h3>
                 </div>
                 <div class="panel-body">
-
                     <div class="pull-right">            
                         <a href="arsip.php" class="btn btn-sm btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
                     </div>
-
-                    <br>
-                    <br>
-
+                    <br><br>
                     <form method="post" action="arsip_aksi.php" enctype="multipart/form-data">
-
                         <p style="color:red;"><em>*wajib diisi</em></p>
-                        
                         <div class="form-group">
                             <label>Kategori</label>
                             <select class="form-control" name="kategori" required="required">
@@ -35,28 +26,20 @@
                                 ?>
                             </select>
                             </div>
-
                         <div class="form-group">
                             <label>File</label><i style="color:red;"><em>*</em></i>
                             <input type="file" id= "filess" name="file" accept=".pdf" required>
 							<p style="color:red;"><em>.PDF Max. 10MB</em></p>
                         </div>
-
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary" value="Upload">
-							
                         </div>
-
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
-
-
 </div>
-
 <script type="text/javascript">
 var uploadField = document.getElementById("filess");
 uploadField.onchange = function() {
@@ -66,5 +49,4 @@ uploadField.onchange = function() {
     };
 };
 </script>
-
 <?php include 'footer.php'; ?>

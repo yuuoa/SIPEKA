@@ -8,13 +8,11 @@ $jabatan = $_POST['jabatan'];
 $teleponwa = $_POST['teleponwa'];
 $teleponkantor = $_POST['teleponkantor'];
 $emailkantor = $_POST['emailkantor'];
-
 // cek gambar
 $rand = rand();
 $allowed =  array('gif','png','jpg','jpeg');
 $filename = $_FILES['foto']['name'];
 $ext = pathinfo($filename, PATHINFO_EXTENSION);
-
 if($pwd=="" && $filename==""){
 	mysqli_query($koneksi, "update tenant set tenant_nama='$nama', tenant_username='$username', tenant_kode='$kode', tenant_jabatan='$jabatan', tenant_notelp='$teleponwa', tenant_nokantor='$teleponkantor', tenant_email='$emailkantor' where tenant_id='$id'");
 	header("location:tenant.php");
