@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include 'header.php'; ?>
 <div class="breadcome-area"><div class="breadcome-list"></div></div>
 <div class="container-fluid">
@@ -8,6 +9,9 @@
                     <h1 class="panel-title">Dashboard</h1>
                 </div>
                 <div class="panel-body">
+=======
+<?php include 'header.php'; include 'breadcome.php';?>
+>>>>>>> 9526d0f0c879fa3c5ffa89841b5233dee73b9afd
 <?php 
     $tenants = mysqli_query($koneksi,"select * from tenant where tenant_id='$id_tenant'");
     $tenants = mysqli_fetch_assoc($tenants);
@@ -18,11 +22,24 @@
         $year = date('Y');
         if ($month == 1 || $month == 2 || $month == 9 || $month == 10 || $month == 11 || $month == 12) { ?>
             <div class="alert alert-danger"><p class="text-center">Batas waktu upload dokumen semester II adalah <b>28 Februari <?php echo $year ?><?php if ($month == 2) { ?></b> segera upload dokumen perusahaan anda!</p><?php } ?></div>
+<<<<<<< HEAD
         <?php }
         elseif ($month == 3 || $month == 4 || $month == 5 || $month == 6 || $month == 7 || $month == 8) { ?>
             <div class="alert alert-danger"><p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?><?php if ($month == 8) { ?></b> segera upload dokumen perusahaan anda!</p><?php } ?></b> segera upload dokumen perusahaan anda!</p></div>
         <?php } ?>
         <?php } ?>
+=======
+            <div class="pull-right"><a href="arsip_tambah.php" class="btn btn-primary"><i class="fa fa-cloud"></i> Unggah Arsip</a></div>
+        <?php }
+        elseif ($month == 3 || $month == 4 || $month == 5 || $month == 6 || $month == 7 || $month == 8) { ?>
+            <div class="alert alert-danger"><p class="text-center">Batas waktu upload dokumen semester I adalah <b>31 Agustus <?php echo $year ?><?php if ($month == 8) { ?></b> segera upload dokumen perusahaan anda!</p><?php } ?></b> segera upload dokumen perusahaan anda!</p></div>
+            <div class="pull-right"><a href="arsip_tambah.php" class="btn btn-primary"><i class="fa fa-cloud"></i> Unggah Arsip</a></div>
+        <?php } ?>
+        <?php }
+    elseif ($tenants['tenant_sudah'] > 0) { ?>
+    <div class="pull-right"><a href="arsip_tambah.php" class="btn btn-primary"><i class="fa fa-cloud"></i> Unggah Arsip</a></div>
+<?php } ?>
+>>>>>>> 9526d0f0c879fa3c5ffa89841b5233dee73b9afd
 <div class="traffice-source-area mg-b-30">
     <div class="container-fluid">
         <div class="row">
@@ -49,5 +66,8 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD
         </div>
+=======
+>>>>>>> 9526d0f0c879fa3c5ffa89841b5233dee73b9afd
 <?php include 'footer.php'; ?>

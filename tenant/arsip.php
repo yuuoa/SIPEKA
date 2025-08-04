@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 <?php include 'header.php';?>
 <div class="breadcome-area"><div class="breadcome-list"></div></div>
 <div class="container-fluid">
     <div class="panel">
+=======
+<?php include 'header.php'; include 'breadcome.php';?>
+<div class="container-fluid">
+    <div class="panel panel">
+>>>>>>> 9526d0f0c879fa3c5ffa89841b5233dee73b9afd
         <div class="panel-heading">
             <h3 class="panel-title">Data Arsip Saya</h3>
         </div>

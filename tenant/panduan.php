@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <?php include 'header.php';?>
 <div class="breadcome-area"><div class="breadcome-list"></div></div>
+=======
+<?php include 'header.php'; include 'breadcome.php';?>
+>>>>>>> 9526d0f0c879fa3c5ffa89841b5233dee73b9afd
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
